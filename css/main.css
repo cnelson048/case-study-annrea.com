@@ -109,7 +109,6 @@ textarea {
   position: relative;
 margin:0;
 }
-
 /* HEADER */
 .logo{
   margin-top: 95px;
@@ -133,19 +132,20 @@ margin:0;
   width:200px;
   margin-top:-50px;
   margin-right:100px;
+
  
 }
 #icons li{
-  text-decoration: none;
   color: #737373;
   display: inline;
   padding:3px;
 
 
 }
-#icons i{
+#icons a{
   margin:5px;
   color:#737373;
+  text-decoration: none;
 }
 /*NAV-BAR*/
 #list-nav {
@@ -180,8 +180,60 @@ margin:0;
 header hr{
   margin-top:60px;
 }
+/*DROP-DOWN*/
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .collect {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: #d9d9d9;
+    padding: 14px 16px;
+    background-color: black;
+}
 
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #d9d9d9;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    color:white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown table{
+  color:#d9d9d9;
+}
+.dropdown a{
+  padding:10px;
+  margin-right:100px;
+}
+.table-header{
+  font-size: 16px;
+}
+.dropdown td{
+  font-size: 12px;
+}
 /*SLIDESHOW*/
 @keyframes slider{
 0% {
@@ -337,24 +389,64 @@ h2{
 
 
 /*SOCIAL MEMDIA*/
-
-
+.social-media-content{
+margin-top: 600px;
+border-top: 1px solid #737373;
+border-bottom: 1px solid gray;
+}
+.touch .follow .join{
+  display: inline-table;
+  margin:10px;
+  padding:10px;
+}
+.touch{
+  margin-right:800px;
+  padding:10px;
+}
+.follow{
+  margin-right:50px;
+  margin-top: -110px
+}
+.join{
+  margin-left:1000px;
+  margin-top:-75px;
+}
+.social-media-icons li{
+  display:inline;
+  color:#737373;
+  font-size: 16px;
+  margin-right:5px;
+}
+.social-media-icons{
+  margin-left:650px;
+}
+.top-content {
+  text-align: center;
+  color:#737373;
+  font-size: 16px;
+ margin-left:30px;
+}
+.bottom-content{
+  text-align: center;
+  color:#737373;
+  font-size: 16px;
+}
 /*FOOTER*/
 footer{
     clear:both;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.footer{
+  padding:20px;
+  text-align: center;
+  margin-left:250px;
+  margin-top:50px;
+}
+.footer a{
+  margin:10px;
+  padding:10px;
+  text-decoration: none;
+  color:#737373;
+}
 
 
 
